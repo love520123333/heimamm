@@ -1,0 +1,221 @@
+body {
+    min-width: 320px;
+    max-width: 750px;
+    margin: 0 auto;
+    background-color: #f3f6f9;
+  }
+  a {
+    text-decoration: none;
+    color: #707070;
+  }
+  // 约束当屏幕大于 750px 的时候，html字体大小就不不变化了
+  @media screen and (min-width: 750px) {
+    html {
+      font-size: 37.5px !important;
+    }
+  }
+  .wrap {
+    background-color: #fff;
+    padding-bottom: 1.146667rem;
+  }
+  .header {
+    height: 2.133333rem;
+    border-bottom: 1px solid #eaeaea;
+    text-align: center;
+    line-height: 2.133333rem;
+    font-size: 0.933333rem;
+    color: #1c1c1c;
+  }
+  .nav {
+    display: flex;
+    // 显示不开就换行
+    flex-wrap: wrap;
+    padding: 1.2rem 0 1.6rem 0;
+    .item {
+      display: flex;
+      width: 33.33%;
+      // 纵向显示
+      flex-direction: column;
+      // 水平居中
+      align-items: center;
+      img {
+        width: 3.706667rem;
+        height: 3.706667rem;
+      }
+      span {      
+        font-size: 0.666667rem;
+        color: #707070;
+    
+      }
+      //选择前面三个
+      &:nth-child(-n+3) {
+        margin-bottom: 1.653333rem;
+      }
+
+    }
+}
+/* go */
+    .go {
+      padding-bottom: 0.146667rem;
+      margin: 0  0.2666rem 0 0.48rem;
+      img {
+        overflow: hidden;
+        width: 19.2rem;
+        height: 4.053333rem;
+      }
+    }
+    .content {
+      padding: 1.06667rem 0.61rem;
+      background-color: #fff;
+      margin-top: 0.266667rem;
+      .con-hd {
+        display: flex;
+        justify-content: space-between;
+        height: 1.013333rem;
+        line-height: 1.013333rem;
+        margin-bottom: .906667rem;
+        h4 {
+          display: flex;
+          align-items: center;
+          margin: 0;
+          font-size: .746667rem;
+          color: #333333;
+          gap: .48rem;
+          .icon {
+            display: inline-block;
+            vertical-align: top;
+          }
+         
+        }
+        .more {
+          font-size: .586667rem;
+          color: #999999;
+        }
+      }    
+    }
+    .get_job_focus {
+      position: relative;
+      .swiper-container {
+        height: 100%;
+        width: 14.4rem;
+      }
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+  
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      transition: 300ms;
+      transform: scale(0.8);
+      opacity: 0.4;
+      a {
+        width: 9.013333rem;
+        height: 10.026667rem;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      p {
+        width: 9.013333rem;
+        font-size: .666667rem;
+        margin-top: .64rem;
+        color: #333;
+        margin-bottom: .213333rem;
+      }
+      }
+    .swiper-slide-active,.swiper-slide-duplicate-active{
+        transform: scale(1);
+        z-index: 999;
+        opacity: 1;
+    }
+    }
+
+    .study_con {
+      margin-bottom: 3.733333rem;
+    }
+//学习模块轮播图
+.study {
+   
+  .swiper {
+    padding: .266667rem;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    
+    width: 7.733333rem;
+    height: 9.066667rem;
+    font-size: 18px;
+    background: #fff;
+    background-color: #fff;
+    border-radius:0.26666rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    justify-content: center;
+    align-items: center;
+    h5 {
+      font-size: .693333rem;
+      margin: .533333rem 0;
+      font-weight: 400;
+      padding: 0 .266667rem;
+    }
+    p {
+      font-size: .693333rem;
+      color: #ff4400;
+      margin-left: .4rem;
+    }
+  }
+
+  .swiper-slide img {
+
+    display: block;
+    width: 7.253333rem;
+    height: 4.56rem;
+    object-fit: cover;
+  }
+}
+
+  .footer {
+    display: flex;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: #fff;
+    height: 3.013333rem;
+    width: 100%;
+    z-index: 9999;
+    padding: .533333rem;
+    border-top: 1px solid #ccc;
+    .item {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      img {
+        margin-top: .466667rem;
+        width: 1.04rem;
+        height: 1.093333rem;
+      }
+      p {
+        font-size: 0.586667rem;
+        color: #666;
+        margin-top: .266667rem;
+      }
+    }
+  }
